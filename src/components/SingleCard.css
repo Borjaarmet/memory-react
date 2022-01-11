@@ -1,0 +1,40 @@
+.card {
+  position: relative;
+}
+.card img {
+  width: 100%;
+  display: block;
+  border: 2px solid aliceblue;
+  border-radius: 6px;
+}
+.front-card {
+  width: 80px;
+  height: 125px;
+}
+
+.back-card {
+  width: 80px;
+  height: 125px;
+}
+
+/* front of the card  -  photo */
+.card .front-card {
+  transform: rotateY(90deg);
+  transition: all ease-in 0.2s;
+  position: absolute;
+}
+.flipped .front-card {
+  transform: rotateY(0deg);
+  transition-delay: 0.2s;
+}
+
+/* back of the card  -  cover */
+
+.card .back-card {
+  transition: all ease-in 0.2s;
+  transition-delay: 0.2s;
+}
+.flipped .back-card {
+  transform: rotateY(90deg);
+  transition-delay: 0s;
+}
